@@ -1,0 +1,5 @@
+use {{replace packageName "-" "_"}};
+
+fn main() {
+  println!("{}", {{replace packageName "-" "_"}}::add(2, 3));
+}

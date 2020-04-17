@@ -1,0 +1,15 @@
+[package]
+name = "rust-lib-crate-template"
+version = "0.1.0"
+description = "A boilerplato template for Rust library crate."
+homepage = "https://github.com/boilerplato/rust-lib-crate-template"
+repository = "https://github.com/boilerplato/rust-lib-crate-template"
+keywords = ["boilerplato", "rust", "template"]
+categories = ["template-engine"]
+authors = ["Rousan Ali <rousanali786@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+log = "0.4"

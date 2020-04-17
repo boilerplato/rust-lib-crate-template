@@ -1,0 +1,33 @@
+[![crates.io](https://img.shields.io/crates/v/{{packageName}}.svg)](https://crates.io/crates/{{packageName}})
+[![Documentation](https://docs.rs/{{packageName}}/badge.svg)](https://docs.rs/{{packageName}})
+{{#if (and (eq (os null) "macos") (eq license "MIT"))}}[![MIT](https://img.shields.io/crates/l/{{packageName}}.svg)](./LICENSE){{/if}}
+{{#if (and (eq (os null) "linux") (eq license "MIT"))}}[![MIT](https://img.shields.io/crates/l/{{packageName}}.svg)](./LICENSE){{/if}}
+
+
+# {{appName}}
+
+{{appDescription}}
+
+[Docs](https://docs.rs/{{packageName}})
+
+## Usage
+
+First add this to your `Cargo.toml`:
+
+```toml
+[dependencies]
+{{packageName}} = "0.1"
+```
+
+An example:
+```rust
+use {{replace packageName "-" "_"}}
+
+fn main() {
+  println!("{}", {{replace packageName "-" "_"}}::add(2, 3));
+}
+```
+
+## Contributing
+
+Your PRs and stars are always welcome.

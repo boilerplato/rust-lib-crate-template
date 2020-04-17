@@ -1,0 +1,9 @@
+# Ignore these files as these will be generated from their .boiler files
+Cargo.toml
+README.md
+/src/lib.rs
+/examples/example1.rs
+
+# Others
+/target
+LICENSE
