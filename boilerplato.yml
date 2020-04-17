@@ -18,7 +18,7 @@ data:
     type: semver
     message: "Enter initial version:"
     required: false
-    defaultValue: "1.0.0"
+    defaultValue: "0.1.0"
   - name: author
     type: string
     message: "Enter author e.g. Alice <a@example.com>:"
