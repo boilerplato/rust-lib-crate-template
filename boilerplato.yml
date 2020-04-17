@@ -49,12 +49,12 @@ data:
     required: false
     defaultValue: []
 postGenerate:
-  - linux: if [ "${license}" = "MIT" ]; then cp "${TEMPLATE_SOURCE_PATH}/LICENSE" "${APP_FULL_PATH}/LICENSE"; fi
-  - macos: if [ "${license}" = "MIT" ]; then cp "${TEMPLATE_SOURCE_PATH}/LICENSE" "${APP_FULL_PATH}/LICENSE"; fi
+  linux: if [ "${license}" = "MIT" ]; then cp "${TEMPLATE_SOURCE_PATH}/LICENSE" "${APP_FULL_PATH}/LICENSE"; fi
+  macos: if [ "${license}" = "MIT" ]; then cp "${TEMPLATE_SOURCE_PATH}/LICENSE" "${APP_FULL_PATH}/LICENSE"; fi
 helpText:
-  - linux:
-      - '{{#if (eq license "MIT")}}{{color "Warning:" "yellow"}} Please update copyright name in the {{color "LICENSE" "green" }} file with appropriate value.{{/if}}'
-      - "\n"
-  - macos:
-      - '{{#if (eq license "MIT")}}{{color "Warning:" "yellow"}} Please update copyright name in the {{color "LICENSE" "green" }} file with appropriate value.{{/if}}'
-      - "\n"
+  linux:
+    - '{{#if (eq license "MIT")}}{{color "Warning:" "yellow"}} Please update copyright name in the {{color "LICENSE" "green" }} file with appropriate value.{{/if}}'
+    - "\n"
+  macos:
+    - '{{#if (eq license "MIT")}}{{color "Warning:" "yellow"}} Please update copyright name in the {{color "LICENSE" "green" }} file with appropriate value.{{/if}}'
+    - "\n"
