@@ -54,7 +54,5 @@ postGenerate:
 helpText:
   linux:
     - '{{#if (eq license "MIT")}}{{color "Warning:" "yellow"}} Please update copyright name in the {{color "LICENSE" "green" }} file with appropriate value.{{/if}}'
-    - ""
   macos:
     - '{{#if (eq license "MIT")}}{{color "Warning:" "yellow"}} Please update copyright name in the {{color "LICENSE" "green" }} file with appropriate value.{{/if}}'
-    - ""
