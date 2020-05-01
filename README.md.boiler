@@ -16,7 +16,7 @@ First add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-{{packageName}} = "0.1"
+{{packageName}} = "{{appVersion}}"
 ```
 
 An example:
