@@ -1,3 +1,4 @@
+{{#if (and isGithubActionsIncluded repoUrl)}}[![Github Actions Status]({{ repoUrl }}/workflows/Test/badge.svg)]({{ repoUrl }}/actions){{/if}}
 [![crates.io](https://img.shields.io/crates/v/{{packageName}}.svg)](https://crates.io/crates/{{packageName}})
 [![Documentation](https://docs.rs/{{packageName}}/badge.svg)](https://docs.rs/{{packageName}})
 {{#if (and (eq (os null) "macos") (eq license "MIT"))}}[![MIT](https://img.shields.io/crates/l/{{packageName}}.svg)](./LICENSE){{/if}}
