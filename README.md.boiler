@@ -21,7 +21,7 @@ First add this to your `Cargo.toml`:
 
 An example:
 ```rust
-use {{replace packageName "-" "_"}}
+use {{replace packageName "-" "_"}};
 
 fn main() {
   println!("{}", {{replace packageName "-" "_"}}::add(2, 3));
