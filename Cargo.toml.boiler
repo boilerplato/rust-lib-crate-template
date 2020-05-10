@@ -11,5 +11,15 @@ readme = "README.md"
 license = "{{license}}"
 edition = "2018"
 
+[package.metadata.docs.rs]
+all-features = true
+
+[package.metadata.playground]
+features = ["all"]
+
+[features]
+default = []
+all = []
+
 [dependencies]
 log = "0.4"
