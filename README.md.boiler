@@ -11,16 +11,17 @@
 
 [Docs](https://docs.rs/{{packageName}})
 
-## Usage
+## Install
 
-First add this to your `Cargo.toml`:
+Add this to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
 {{packageName}} = "{{appVersion}}"
 ```
 
-An example:
+## Example
+
 ```rust
 use {{replace packageName "-" "_"}};
 
